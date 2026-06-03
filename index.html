@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apex Edge Lawn Care | Mowing & Hedge Trimming in Kansas City</title>
+<meta name="description" content="Apex Edge Lawn Care offers reliable mowing and hedge trimming across the greater Kansas City area. Free quotes. Call (763) 447-7859.">
+<meta name="theme-color" content="#4B5D2F">
+<script>document.documentElement.className='js';</script>
+
+<!-- Open Graph / social preview -->
+<meta property="og:title" content="Apex Edge Lawn Care | Mowing & Hedge Trimming in Kansas City">
+<meta property="og:description" content="Reliable mowing and hedge trimming across the greater Kansas City area. Free quotes.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/logo-colored.png">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- Fonts: Fraunces (display) + Hanken Grotesk (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#4B5D2F;
+  --green-deep:#3a4a24;
+  --green-mid:#6b7f45;
+  --green-soft:#e7ecdd;
+  --tan:#ba9765;
+  --tan-light:#d8c3a0;
+  --tan-soft:#f1e8d8;
+  --cream:#fbfaf3;
+  --paper:#fdfefa;
+  --ink:#222a18;
+  --ink-soft:#4a5340;
+  --line:#e3e2d4;
+  --shadow:0 18px 50px -20px rgba(40,52,28,.35);
+  --shadow-sm:0 8px 24px -12px rgba(40,52,28,.28);
+  --radius:18px;
+  --maxw:1180px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Hanken Grotesk',sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.6;
+  font-size:17px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Fraunces',serif;line-height:1.08;font-weight:600;color:var(--green-deep);letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{
+  font-family:'Hanken Grotesk',sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.22em;
+  font-size:.74rem;
+  font-weight:700;
+  color:var(--tan);
+}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.55em;
+  font-weight:600;font-size:1rem;
+  padding:.82em 1.5em;border-radius:999px;
+  cursor:pointer;border:none;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+  white-space:nowrap;
+}
+.btn-primary{background:var(--green);color:#fff;box-shadow:var(--shadow-sm)}
+.btn-primary:hover{background:var(--green-deep);transform:translateY(-2px)}
+.btn-tan{background:var(--tan);color:#3a2e18}
+.btn-tan:hover{background:var(--tan-light);transform:translateY(-2px)}
+.btn-ghost{background:transparent;border:1.5px solid var(--green);color:var(--green)}
+.btn-ghost:hover{background:var(--green);color:#fff;transform:translateY(-2px)}
+.btn-light{background:#fff;color:var(--green-deep);box-shadow:var(--shadow-sm)}
+.btn-light:hover{transform:translateY(-2px)}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(253,254,250,.85);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:46px;width:auto}
+.brand .name{display:none}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{font-weight:500;color:var(--ink-soft);font-size:.98rem;position:relative;padding:4px 0}
+.nav-links a::after{
+  content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--tan);transition:width .22s ease;
+}
+.nav-links a:hover{color:var(--green)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:16px}
+.nav-phone{font-weight:700;color:var(--green);display:flex;align-items:center;gap:7px}
+.nav-phone svg{width:17px;height:17px}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.menu-btn span{display:block;width:24px;height:2px;background:var(--green-deep);margin:5px 0;transition:.25s}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(120% 90% at 85% 0%, rgba(107,127,69,.30) 0%, transparent 55%),
+    radial-gradient(90% 80% at 0% 100%, rgba(186,151,101,.22) 0%, transparent 50%),
+    linear-gradient(165deg,#fdfefa 0%, #f4f3e8 100%);
+  overflow:hidden;
+}
+.hero::before{ /* subtle grain */
+  content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
+}
+.hero-grid{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;
+  padding:84px 0 96px;
+}
+.hero-copy .eyebrow{margin-bottom:18px;display:inline-block}
+.hero h1{font-size:clamp(2.6rem,5.4vw,4.3rem);font-weight:600}
+.hero h1 em{font-style:italic;color:var(--tan)}
+.hero p.lead{font-size:1.2rem;color:var(--ink-soft);margin:22px 0 14px;max-width:30ch}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.hero-badges{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap}
+.hero-badge{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--green-deep);font-size:.96rem}
+.hero-badge svg{width:22px;height:22px;color:var(--tan);flex-shrink:0}
+
+/* Hero visual card */
+.hero-visual{position:relative}
+.hero-card{
+  position:relative;border-radius:26px;overflow:hidden;
+  background:linear-gradient(160deg,var(--green) 0%, var(--green-deep) 100%);
+  box-shadow:var(--shadow);
+  aspect-ratio:4/4.4;
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:34px;
+}
+.hero-card .stripes{position:absolute;inset:0;opacity:.5;
+  background:repeating-linear-gradient(100deg, rgba(255,255,255,.05) 0 22px, transparent 22px 60px);
+}
+.hero-card svg.blades{position:absolute;right:-30px;bottom:-20px;width:340px;opacity:.16;color:#fff}
+.hero-card .logo-chip{
+  position:relative;z-index:2;background:#fff;border-radius:16px;padding:18px 20px;
+  width:fit-content;box-shadow:0 10px 30px -12px rgba(0,0,0,.4)}
+.hero-card .logo-chip img{height:62px}
+.hero-card .card-foot{position:relative;z-index:2;color:#fff}
+.hero-card .card-foot .big{font-family:'Fraunces',serif;font-size:1.7rem;color:#fff;line-height:1.15}
+.hero-card .card-foot .small{color:var(--tan-light);font-weight:600;margin-top:6px;letter-spacing:.02em}
+.float-tag{
+  position:absolute;background:#fff;border-radius:14px;padding:12px 16px;
+  box-shadow:var(--shadow);display:flex;align-items:center;gap:10px;font-weight:700;color:var(--green-deep);
+  font-size:.92rem;z-index:3;
+}
+.float-tag svg{width:20px;height:20px;color:var(--tan)}
+.float-tag.t1{top:-18px;left:-26px}
+.float-tag.t2{bottom:30px;right:-22px;color:var(--green)}
+
+/* ---------- Section scaffolding ---------- */
+section{padding:88px 0}
+.section-head{max-width:640px;margin-bottom:52px}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.section-head .eyebrow{margin-bottom:14px;display:inline-block}
+.section-head h2{font-size:clamp(2rem,3.6vw,2.9rem)}
+.section-head p{color:var(--ink-soft);margin-top:16px;font-size:1.1rem}
+
+/* ---------- Trust strip ---------- */
+.trust{background:var(--green);color:#fff;padding:0}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.trust-item{padding:34px 26px;text-align:center;border-right:1px solid rgba(255,255,255,.12)}
+.trust-item:last-child{border-right:none}
+.trust-item svg{width:30px;height:30px;color:var(--tan-light);margin:0 auto 12px}
+.trust-item h4{color:#fff;font-size:1.12rem;margin-bottom:4px}
+.trust-item p{color:rgba(255,255,255,.78);font-size:.92rem;line-height:1.45}
+
+/* ---------- Services ---------- */
+.services{background:var(--cream)}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.svc-card{
+  background:#fff;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-sm);border:1px solid var(--line);
+  transition:transform .25s ease, box-shadow .25s ease;
+  display:flex;flex-direction:column;
+}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.svc-top{
+  position:relative;height:200px;overflow:hidden;
+  background:linear-gradient(150deg,var(--green-mid),var(--green));
+  display:flex;align-items:center;justify-content:center;
+}
+.svc-top.alt{background:linear-gradient(150deg,#7d8f56,var(--green-mid))}
+.svc-top .stripes{position:absolute;inset:0;opacity:.45;
+  background:repeating-linear-gradient(105deg, rgba(255,255,255,.07) 0 18px, transparent 18px 46px)}
+.svc-top svg.icon{width:74px;height:74px;color:#fff;position:relative;z-index:2}
+.svc-body{padding:28px 28px 32px}
+.svc-body h3{font-size:1.5rem;margin-bottom:10px}
+.svc-body p{color:var(--ink-soft);font-size:1rem}
+.svc-body ul{list-style:none;margin-top:18px;display:grid;gap:9px}
+.svc-body li{display:flex;align-items:center;gap:10px;font-size:.96rem;font-weight:500;color:var(--ink)}
+.svc-body li svg{width:18px;height:18px;color:var(--green-mid);flex-shrink:0}
+.svc-body .svc-link{margin-top:22px;font-weight:700;color:var(--green);display:inline-flex;align-items:center;gap:6px}
+.svc-body .svc-link svg{width:18px;height:18px;transition:transform .2s}
+.svc-card:hover .svc-link svg{transform:translateX(4px)}
+
+/* ---------- Service area ---------- */
+.area{background:var(--green-deep);color:#fff;position:relative;overflow:hidden}
+.area::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(186,151,101,.3),transparent 65%)}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;position:relative;z-index:2}
+.area h2{color:#fff;font-size:clamp(2rem,3.6vw,2.8rem)}
+.area .eyebrow{color:var(--tan-light)}
+.area p{color:rgba(255,255,255,.82);margin-top:16px;font-size:1.1rem}
+.area-list{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px}
+.area-pill{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);padding:8px 16px;border-radius:999px;font-weight:600;font-size:.92rem}
+.area-map{
+  position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1/.82;
+  background:linear-gradient(160deg,#5d6f3f,#46562b);box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:center;padding:30px;
+}
+.area-map .pin{
+  position:relative;z-index:2;text-align:center;color:#fff;
+}
+.area-map .pin svg{width:56px;height:56px;color:var(--tan-light);margin:0 auto 12px}
+.area-map .pin .city{font-family:'Fraunces',serif;font-size:1.9rem}
+.area-map .grid-lines{position:absolute;inset:0;opacity:.18;
+  background-image:linear-gradient(rgba(255,255,255,.4) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.4) 1px,transparent 1px);
+  background-size:38px 38px}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+.about-photo{
+  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+  background:linear-gradient(160deg,var(--tan-soft),var(--green-soft));
+  aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:40px;position:relative;
+}
+.about-photo img{height:auto;width:78%;filter:drop-shadow(0 12px 24px rgba(40,52,28,.18))}
+.about-photo .ring{position:absolute;inset:24px;border:1.5px dashed rgba(75,93,47,.3);border-radius:14px}
+.about-copy h2{font-size:clamp(2rem,3.6vw,2.8rem)}
+.about-copy p{color:var(--ink-soft);margin-top:18px;font-size:1.08rem}
+.about-points{margin-top:26px;display:grid;gap:14px}
+.about-points li{list-style:none;display:flex;gap:12px;align-items:flex-start}
+.about-points svg{width:24px;height:24px;color:var(--tan);flex-shrink:0;margin-top:2px}
+.about-points b{color:var(--ink);font-weight:700}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--cream)}
+.faq-list{max-width:760px;margin:0 auto;display:grid;gap:14px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:box-shadow .2s}
+.faq-item[open]{box-shadow:var(--shadow-sm)}
+.faq-item summary{
+  list-style:none;cursor:pointer;padding:20px 24px;font-weight:600;font-size:1.08rem;color:var(--green-deep);
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary .ic{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--green-soft);
+  display:flex;align-items:center;justify-content:center;transition:.25s}
+.faq-item summary .ic svg{width:14px;height:14px;color:var(--green);transition:.25s}
+.faq-item[open] summary .ic{background:var(--green)}
+.faq-item[open] summary .ic svg{color:#fff;transform:rotate(45deg)}
+.faq-item .ans{padding:0 24px 22px;color:var(--ink-soft)}
+
+/* ---------- Quote / CTA ---------- */
+.quote{background:var(--paper)}
+.quote-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.quote-copy .eyebrow{display:inline-block;margin-bottom:14px}
+.quote-copy h2{font-size:clamp(2rem,3.6vw,2.9rem)}
+.quote-copy p{color:var(--ink-soft);margin-top:18px;font-size:1.1rem}
+.quote-contact{margin-top:30px;display:grid;gap:16px}
+.qc-row{display:flex;align-items:center;gap:14px}
+.qc-ic{width:46px;height:46px;border-radius:12px;background:var(--green-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.qc-ic svg{width:21px;height:21px;color:var(--green)}
+.qc-row .l{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-soft);font-weight:600}
+.qc-row .v{font-weight:700;color:var(--green-deep);font-size:1.12rem}
+.qc-row a.v:hover{color:var(--tan)}
+
+.quote-form{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px;box-shadow:var(--shadow);
+}
+.quote-form h3{font-size:1.4rem;margin-bottom:6px}
+.quote-form .sub{color:var(--ink-soft);font-size:.96rem;margin-bottom:22px}
+.field{margin-bottom:16px}
+.field label{display:block;font-weight:600;font-size:.88rem;margin-bottom:6px;color:var(--ink)}
+.field input,.field select,.field textarea{
+  width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;
+  font-family:inherit;font-size:1rem;color:var(--ink);background:var(--paper);transition:border .18s, box-shadow .18s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--green-mid);box-shadow:0 0 0 3px rgba(107,127,69,.15)}
+.field textarea{resize:vertical;min-height:90px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.quote-form button{width:100%;justify-content:center;margin-top:6px}
+.form-note{font-size:.82rem;color:var(--ink-soft);text-align:center;margin-top:14px}
+
+/* ---------- Footer ---------- */
+footer{background:var(--green-deep);color:#fff;padding:64px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.14)}
+.foot-brand .wordmark{font-family:'Fraunces',serif;font-size:1.7rem;color:#fff;font-weight:600}
+.foot-brand .wordmark span{color:var(--tan-light)}
+.foot-brand p{color:rgba(255,255,255,.72);margin-top:14px;max-width:34ch;font-size:.96rem}
+.foot-col h4{color:#fff;font-size:1.05rem;margin-bottom:16px}
+.foot-col a,.foot-col p{display:block;color:rgba(255,255,255,.74);margin-bottom:10px;font-size:.96rem}
+.foot-col a:hover{color:var(--tan-light)}
+.foot-bottom{padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:rgba(255,255,255,.6);font-size:.86rem}
+.foot-bottom a{color:rgba(255,255,255,.6)}
+
+/* ---------- Reveal animation (progressive enhancement) ---------- */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* ---------- Mobile ---------- */
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:44px;padding:54px 0 70px}
+  .hero-visual{max-width:420px;margin:0 auto;width:100%}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .trust-item:nth-child(2){border-right:none}
+  .trust-item{border-bottom:1px solid rgba(255,255,255,.12)}
+  .svc-grid{grid-template-columns:1fr}
+  .area-grid,.about-grid,.quote-grid{grid-template-columns:1fr;gap:40px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  body{font-size:16px}
+  .nav-links{
+    position:fixed;inset:78px 0 auto 0;background:var(--paper);flex-direction:column;
+    gap:0;padding:10px 0;border-bottom:1px solid var(--line);transform:translateY(-120%);
+    transition:transform .3s ease;box-shadow:var(--shadow);
+  }
+  .nav-links.open{transform:none}
+  .nav-links a{padding:14px 24px;width:100%;font-size:1.05rem}
+  .nav-links a::after{display:none}
+  .menu-btn{display:block}
+  .nav-phone span.lbl{display:none}
+  .nav .btn{padding:.6em 1.05em;font-size:.92rem}
+  .hero-badges{gap:16px}
+  .field-row{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .float-tag.t1{left:-8px}
+  .float-tag.t2{right:-6px}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Apex Edge Lawn Care home">
+      <img src="assets/logo.png" alt="Apex Edge Lawn Care logo">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#area">Service Area</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+17634477859" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="lbl">(763) 447-7859</span>
+      </a>
+      <a href="#quote" class="btn btn-primary">Free Quote</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" style="padding:0">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Greater Kansas City &middot; Free Quotes</span>
+      <h1>A sharper lawn, <em>every week.</em></h1>
+      <p class="lead">Clean mowing and crisp hedge trimming for Kansas City homes. We show up, we do good work, and your yard looks the part.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+        <a href="tel:+17634477859" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (763) 447-7859
+        </a>
+      </div>
+      <div class="hero-badges">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Free, no-pressure quotes
+        </div>
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Locally owned
+        </div>
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Reliable schedule
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="hero-card">
+        <div class="stripes"></div>
+        <svg class="blades" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 95 C25 60 30 45 50 20"/><path d="M35 95 C40 65 48 50 62 28"/><path d="M50 95 C55 68 64 52 78 34"/><path d="M65 95 C70 70 80 58 92 42"/></svg>
+        <div class="logo-chip"><img src="assets/logo.png" alt="Apex Edge Lawn Care"></div>
+        <div class="card-foot">
+          <div class="big">Mowing &amp;<br>hedge trimming</div>
+          <div class="small">Done right, on time, every visit.</div>
+        </div>
+      </div>
+      <div class="float-tag t1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>
+        Free quotes
+      </div>
+      <div class="float-tag t2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 2.4 7.4H22l-6 4.5 2.3 7.1-6.3-4.6L5.7 21l2.3-7.1-6-4.5h7.6z"/></svg>
+        Kansas City
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      <h4>Free Quotes</h4>
+      <p>Tell us about your yard and we&rsquo;ll give you a clear price. No cost, no pressure.</p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <h4>On Time</h4>
+      <p>We keep a steady schedule, so you always know when we&rsquo;re coming.</p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      <h4>Clean Work</h4>
+      <p>Sharp edges, even cuts, and a tidy yard when we leave.</p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <h4>Kansas City Local</h4>
+      <p>We serve the greater Kansas City area and treat your yard like our own.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2>Two services. Done well.</h2>
+      <p>We&rsquo;re keeping it simple for now: mowing and hedge trimming, both done with care.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <div class="svc-top">
+          <div class="stripes"></div>
+          <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 46h40a6 6 0 0 0 6-6V22"/>
+            <circle cx="14" cy="50" r="6"/><circle cx="40" cy="50" r="6"/>
+            <path d="M52 22h6M6 46V34h12l6 12"/>
+            <path d="M22 34c0-6 4-10 10-10"/>
+          </svg>
+        </div>
+        <div class="svc-body">
+          <h3>Lawn Mowing</h3>
+          <p>A clean, even cut that keeps your grass healthy and your yard looking its best week to week.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Even, healthy cut height</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Crisp string-trimmed edges</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Clippings blown off walks and drives</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Weekly or every-other-week visits</li>
+          </ul>
+          <a href="#quote" class="svc-link">Get a quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-top alt">
+          <div class="stripes"></div>
+          <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 14l18 18M10 24l14 14"/>
+            <circle cx="9" cy="11" r="4"/><circle cx="9" cy="27" r="4"/>
+            <path d="M30 34c8-2 14-2 24 0-10 2-16 2-24 0zM34 30c6-3 12-4 20-3-8 3-14 4-20 3z"/>
+            <path d="M40 38v14M48 36v16M32 40v10"/>
+          </svg>
+        </div>
+        <div class="svc-body">
+          <h3>Hedge Trimming</h3>
+          <p>Shaped, tidy hedges and shrubs that give the whole yard a finished, cared-for look.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Clean, even shaping</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Healthier, fuller growth</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Trimmings cleaned up and hauled</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Shrubs, bushes, and small hedges</li>
+          </ul>
+          <a href="#quote" class="svc-link">Get a quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="area" id="area">
+  <div class="wrap area-grid">
+    <div class="reveal">
+      <span class="eyebrow">Where We Work</span>
+      <h2>Serving the greater Kansas City area</h2>
+      <p>If you&rsquo;re in or near Kansas City, we&rsquo;ve got you covered. Not sure if you&rsquo;re in range? Just ask &mdash; we&rsquo;re happy to check.</p>
+      <div class="area-list">
+        <span class="area-pill">Kansas City</span>
+        <span class="area-pill">Overland Park</span>
+        <span class="area-pill">Olathe</span>
+        <span class="area-pill">Lenexa</span>
+        <span class="area-pill">Shawnee</span>
+        <span class="area-pill">Lee&rsquo;s Summit</span>
+        <span class="area-pill">Independence</span>
+        <span class="area-pill">&amp; surrounding</span>
+      </div>
+      <div style="margin-top:30px">
+        <a href="#quote" class="btn btn-tan">Check My Area</a>
+      </div>
+    </div>
+    <div class="area-map reveal">
+      <div class="grid-lines"></div>
+      <div class="pin">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="city">Kansas City</div>
+        <div style="color:rgba(255,255,255,.7);font-weight:600;margin-top:4px">Missouri &amp; Kansas metro</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo reveal">
+      <div class="ring"></div>
+      <img src="assets/logo-colored.png" alt="Apex Edge Lawn Care">
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">Our Promise</span>
+      <h2>Small business. Sharp results.</h2>
+      <p>Apex Edge Lawn Care is a local, family-run business built on a simple idea: do honest work and treat every yard like it&rsquo;s our own.</p>
+      <p>You get the same person every visit, a fair price, and a lawn you&rsquo;re proud of. That&rsquo;s the whole plan.</p>
+      <ul class="about-points">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span><b>Dependable.</b> We show up when we say we will.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span><b>Honest pricing.</b> A clear quote up front, no surprises.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span><b>Careful work.</b> We sweat the edges and the cleanup.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Good to Know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>What services do you offer right now?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="ans">Mowing and hedge trimming. We&rsquo;re keeping our list short on purpose so we can do both really well. More services may come later.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How much does it cost?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="ans">It depends on the size of your yard and what you need. That&rsquo;s why we give free quotes. Send us your details and we&rsquo;ll get you a clear price.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you serve my neighborhood?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="ans">We work across the greater Kansas City area. If you&rsquo;re not sure you&rsquo;re in range, just reach out and ask. We&rsquo;re glad to check.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How often will you mow?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="ans">Most lawns do best with a weekly or every-other-week cut during the growing season. We&rsquo;ll help you pick a schedule that fits your yard and budget.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I get started?
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="ans">Fill out the quote form below or give us a call at (763) 447-7859. We&rsquo;ll get back to you with a price and a start date.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="quote" id="quote">
+  <div class="wrap quote-grid">
+    <div class="quote-copy reveal">
+      <span class="eyebrow">Free Quote</span>
+      <h2>Let&rsquo;s get your yard on the schedule.</h2>
+      <p>Tell us a little about your lawn and we&rsquo;ll send you a free quote. No cost, no pressure.</p>
+      <div class="quote-contact">
+        <div class="qc-row">
+          <div class="qc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="l">Call or Text</div><a href="tel:+17634477859" class="v">(763) 447-7859</a></div>
+        </div>
+        <div class="qc-row">
+          <div class="qc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div>
+          <div><div class="l">Email</div><a href="mailto:apexedgekc@gmail.com" class="v">apexedgekc@gmail.com</a></div>
+        </div>
+        <div class="qc-row">
+          <div class="qc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="l">Service Area</div><div class="v">Greater Kansas City</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      ============================================================
+      QUOTE FORM
+      As written, this form opens the visitor's email app with their
+      details filled in, addressed to apexedgekc@gmail.com. It works
+      on GitHub Pages with no setup.
+
+      WANT QUOTES TO ARRIVE WITHOUT the visitor needing an email app?
+      Use Formspree (free):
+        1. Sign up at https://formspree.io with apexedgekc@gmail.com
+        2. Create a form, copy its endpoint (e.g. https://formspree.io/f/abcwxyz)
+        3. On the <form> tag below:
+             - set  method="POST"
+             - set  action="https://formspree.io/f/abcwxyz"
+             - delete the  onsubmit="..."  attribute
+      ============================================================
+    -->
+    <form class="quote-form reveal" id="quoteForm" onsubmit="return sendQuote(event)">
+      <h3>Request your free quote</h3>
+      <div class="sub">We&rsquo;ll reply with a price and a start date.</div>
+      <div class="field-row">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(000) 000-0000">
+        </div>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@email.com">
+      </div>
+      <div class="field">
+        <label for="address">Property address</label>
+        <input type="text" id="address" name="address" placeholder="Street, City">
+      </div>
+      <div class="field">
+        <label for="service">Service needed</label>
+        <select id="service" name="service">
+          <option>Mowing</option>
+          <option>Hedge trimming</option>
+          <option>Mowing &amp; hedge trimming</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Anything else? (optional)</label>
+        <textarea id="message" name="message" placeholder="Yard size, gate code, how often, etc."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send My Request</button>
+      <div class="form-note">Or call / text <a href="tel:+17634477859" style="color:var(--green);font-weight:700">(763) 447-7859</a></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="wordmark">Apex Edge <span>Lawn Care</span></div>
+        <p>Reliable mowing and hedge trimming for the greater Kansas City area. Free quotes, honest work.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <a href="#services">Lawn Mowing</a>
+        <a href="#services">Hedge Trimming</a>
+        <a href="#quote">Free Quote</a>
+        <a href="#area">Service Area</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+17634477859">(763) 447-7859</a>
+        <a href="mailto:apexedgekc@gmail.com">apexedgekc@gmail.com</a>
+        <p>Greater Kansas City</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; <span id="yr"></span> Apex Edge Lawn Care. All rights reserved.</div>
+      <div><a href="#top">Back to top &uarr;</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// year
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// mobile menu
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+// scroll reveal
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+}, { threshold:.14 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// quote form -> opens email app prefilled (works with no backend)
+function sendQuote(e){
+  e.preventDefault();
+  const v = id => (document.getElementById(id).value || '').trim();
+  const subject = 'Free Quote Request - ' + (v('name') || 'New Lead');
+  const body =
+    'Name: ' + v('name') + '\n' +
+    'Phone: ' + v('phone') + '\n' +
+    'Email: ' + v('email') + '\n' +
+    'Address: ' + v('address') + '\n' +
+    'Service: ' + v('service') + '\n\n' +
+    'Details:\n' + v('message') + '\n';
+  window.location.href = 'mailto:apexedgekc@gmail.com'
+    + '?subject=' + encodeURIComponent(subject)
+    + '&body=' + encodeURIComponent(body);
+  return false;
+}
+</script>
+</body>
+</html>
