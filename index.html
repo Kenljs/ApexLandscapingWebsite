@@ -56,7 +56,7 @@ body{
 h1,h2,h3,h4{font-family:'Fraunces',serif;line-height:1.08;font-weight:600;color:var(--green-deep);letter-spacing:-.01em}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 .eyebrow{
   font-family:'Hanken Grotesk',sans-serif;
   text-transform:uppercase;
@@ -359,6 +359,7 @@ footer{background:var(--green-deep);color:#fff;padding:64px 0 30px}
 }
 @media(max-width:680px){
   body{font-size:16px}
+  .wrap{padding:0 20px}
   .nav-links{
     position:fixed;inset:78px 0 auto 0;background:var(--paper);flex-direction:column;
     gap:0;padding:10px 0;border-bottom:1px solid var(--line);transform:translateY(-120%);
@@ -370,6 +371,7 @@ footer{background:var(--green-deep);color:#fff;padding:64px 0 30px}
   .menu-btn{display:block}
   .nav-phone span.lbl{display:none}
   .nav .btn{padding:.6em 1.05em;font-size:.92rem}
+  .hero-grid{padding-top:68px}
   .hero-badges{gap:16px}
   .field-row{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr}
